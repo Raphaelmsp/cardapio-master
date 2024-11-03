@@ -171,7 +171,7 @@ if(index !== -1)
     const phone = "24992597690"
 
     window.open(`https://wa.me/${phone}?text=${menssage}                                                                            
-      Nome: ${nameInput.value}                     
+      Nome: ${nameInput.value}                                           
       Matrícula: ${matrInput.value}`, "_blank");
 
     cart = [];
