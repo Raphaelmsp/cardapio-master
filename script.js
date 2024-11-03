@@ -57,9 +57,10 @@ menu.addEventListener("click", function(event) {
 
   //atualiza pedido opção
   function UpdateCartModal(){
-    
+    let total = 0;
     if (cartItemsContainer) {
       cartItemsContainer.innerHTML = "";
+      
   } else {
       console.error("cartItemsContainer not found");
   }
@@ -87,9 +88,13 @@ menu.addEventListener("click", function(event) {
           
         </div>
       `
+      total += item.quantity;
+
       cartItemsContainer.appendChild(cartItemElement);
     });
+    
     cartCounter.innerHTML = cart.length;
+    cartTotal.textContent = total;
     
   }
 
@@ -172,42 +177,6 @@ if(index !== -1)
     cart = [];
     UpdateCartModal();
   })
-
-  // // Preparar os dados do carrinho
-  // const cartItems = cart.map((item) => {
-  //   return `${item.name} Quantidade: (${item.quantity})`;
-  // }).join(", ");
-
-  // const data = {
-  //   name: nameInput.value,
-  //   matr: matrInput.value,
-  //   items: cartItems
-  // };
-
-  // // Enviar dados para a planilha
-  // const sheetId = '1IAJG9a9SUahxleW_sOLuNESeuyHvBD3kvSeTMFYt33c'; // Substitua pelo ID da sua planilha
-  // const apiKey = 'AIzaSyB62HkZopvLAg8W8B7jzBTaWZ_niBV45Es'; // Substitua pela sua chave de API
-  // const range = 'Sheet1!A2'; // Altere para o intervalo que você deseja usar
-
-  // fetch(`https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${range}:append?valueInputOption=RAW&key=${apiKey}`, {
-  //   method: 'POST',
-  //   headers: {
-  //     'Content-Type': 'application/json',
-  //   },
-  //   body: JSON.stringify({
-  //     values: [[data.name, data.matr, data.items]]
-  //   }),
-  // })
-  // .then(response => response.json())
-  // .then(data => {
-  //   console.log('Success:', data);
-  //   // Limpar o carrinho
-  //   cart = [];
-  //   UpdateCartModal();
-  // })
-  // .catch((error) => {
-  //   console.error('Error:', error);
-  // });
 
 
 //vericar a hora e manipular o card horario
