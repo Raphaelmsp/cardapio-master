@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!--meta tag og-->
+<meta property="og:type" ccontent="website" />
+<meta property="og:title" ccontent="Restaurante Benito Gomes Cinbal" />
+<meta property="og:image" ccontent="https://cardapio-gamma-seven.vercel.app/assets/cinbal-logo.png" />
+<meta property="og:description" ccontent="O melhor restaurante!" />
+<meta property="og:site_name" ccontent="Restaurante Benito Gomes Cinbal" />
+
+<link rel="stylesheet" href="./styles/output.css" />
+
+<title>Restaurante Benito Gomes Cinbal</title>
+</head>
+<body>
+
+<header class="w-full h-[420px] bg-zinc-900 bg-home">
+  <div class="w-auto h-auto flex flex-col justify-center items-center">
+    <img
+      src="./assets/cinbal-logo.png"
+      alt="Logo do Restaurante Benito Gomes Cinbal"
+      class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200 mt-5" 
+    />
+    
+    <h1 class="text-4xl mt-4 mb-2 font-bold text-white">Benito Gomes</h1>
+    <p class="text-2xl mt-4 mb-2 font-medium text-white">Restaurante</p>
+
+    <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+      <span class="text-white font-medium">Seg á Sáb - 06:00 as 20:00</span>
+    </div>
+  </div>
+</header>
+
+<h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">Cardápio da semana</h2>
+
+<!--ini menu-->
+<div id="menu">
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+
+          <!--ini prato seg-->   
+            <div class="flex flex-row gap-2">
+            <img 
+              src="./assets/prato/p-img.jpg"
+              alt="Maionese"
+              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+            />
+            
+            <div>
+              <p class="font-bold text-lg">Macarrão</p>
+              <p class="text-sm">Feito com carinho para você,<br>
+                deixando o seu almoço com muito mais sabor. Aproveite!<br>
+                A equipe do refeitório agradece!
+              </p>
+              <p class="font-bold ">Segunda-feira</p>
+            </div>
+              
+            </div>
+            <!--fim prato seg-->      
+            
+            <!--ini prato ter-->
+            <div class="flex flex-row gap-2">
+            <img 
+              src="./assets/prato/prato-02.jpeg"
+              alt="Maionese"
+              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+            />
+              
+            <div>
+              <p class="font-bold text-lg">Escodidinho de carne seca</p>
+                  <p class="text-sm">Feito com carinho para você,<br>
+                    deixando o seu almoço com muito mais sabor. Aproveite!<br>
+                    A equipe do refeitório agradece!
+                  </p>
+              <p class="font-bold ">Terça-feira</p>
+            </div>    
+            </div>
+            <!--fim prato ter-->
+            
+            <!--ini prato qua-->    
+            <div class="flex flex-row gap-2">
+            <img 
+              src="./assets/prato/prato-03.jpeg"
+              alt="Maionese"
+              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+            />
+              
+            <div>
+              <p class="font-bold text-lg">Peixe frito</p>
+              <p class="text-sm">Feito com carinho para você,<br>
+                deixando o seu almoço com muito mais sabor. Aproveite!<br>
+                A equipe do refeitório agradece!
+              </p>
+    
+              <p class="font-bold ">Quarta-feira</p>
+            </div>
+              
+            </div>
+            <!--fim prato qua-->      
+            
+            <!--ini prato qui-->
+            <div class="flex flex-row gap-2">
+            <img 
+              src="./assets/prato/prato-04.jpeg"
+              alt="Maionese"
+              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+            />
+              
+            <div>
+              <p class="font-bold text-lg">Carne moida</p>
+              <p class="text-sm">Feito com carinho para você,<br>
+                deixando o seu almoço com muito mais sabor. Aproveite!<br>
+                A equipe do refeitório agradece!
+              </p>
+    
+              <p class="font-bold ">Quinta-feira</p>
+            </div>
+              
+              </div>
+            <!--fim prato qui-->
+            
+            <!--ini prato sex-->    
+            <div class="flex flex-row gap-2">
+            <img 
+              src="./assets/prato/prato-05.jpeg"
+              alt="Maionese"
+              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+            />
+              
+            <div>
+              <p class="font-bold text-lg">Rocambole de Carne</p>
+              <p class="text-sm">Feito com carinho para você,<br>
+                deixando o seu almoço com muito mais sabor. Aproveite!<br>
+                A equipe do refeitório agradece!
+              </p>
+    
+              <p class="font-bold ">Sexta-feira</p>
+            </div>
+              
+            </div>
+            <!--fim prato sex-->      
+            
+            <!--ini prato sab-->
+              <div class="flex flex-row gap-2">
+            <img 
+              src="./assets/prato/prato-06.jpeg"
+              alt="Maionese"
+              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+            />
+              
+            <div>
+              <p class="font-bold text-lg">Bife de boi</p>
+              <p class="text-sm">Feito com carinho para você,<br>
+                deixando o seu almoço com muito mais sabor. Aproveite!<br>
+                A equipe do refeitório agradece!
+              </p>
+    
+              <p class="font-bold ">Sábado</p>
+            </div>
+              
+              </div>
+            <!--fim prato sab-->
+          </div>
+          <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">Opções da semana</h2>
+
+            <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+
+              <!--ini opc-seg-->
+              <div class="flex flex-row gap-2">
+                <img 
+                  src="./assets/opc/opcimg.jpg"
+                  alt="Tutu à mineira"
+                  class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+                />
+
+                <div>
+                  <p class="font-bold text-lg">Tutu à mineira</p>
+                  <p class="text-sm">Feito com carinho para você,<br>
+                    deixando o seu almoço com muito mais sabor. Aproveite!<br>
+                    A equipe do refeitório agradece!
+                  </p>
+                
+
+                  <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold ">Segunda-feira</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                    data-name="Tutu à mineira"
+                    data-opc="Pedir Opção"
+                    data-image="./assets/opc/opcimg.jpg"
+                    >
+                      <i class="fa fa-add text-lg text-white"></i>
+                    </button>
+                  </div>
+
+                </div>
+
+              </div>
+              <!--fim opc-seg-->
+
+              <!--ini opc-ter-->
+              <div class="flex flex-row gap-2">
+                      <img 
+                        src="./assets/opc/opcimg02.jpeg"
+                        alt="Bife a parmegiana"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+                      />
+                
+                      <div>
+                        <p class="font-bold text-lg">Bife a parmegiana</p>
+                        <p class="text-sm">Feito com carinho para você,<br>
+                          deixando o seu almoço com muito mais sabor. Aproveite!<br>
+                          A equipe do refeitório agradece!
+                        </p>
+                      
+      
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                          <p class="font-bold ">Terça-feira</p>
+                          <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                          data-name="Bife a parmegiana"
+                          data-opc="Pedir Opção"
+                          >
+                            <i class="fa fa-add text-lg text-white"></i>
+                          </button>
+                        </div>
+                
+                      </div>
+                
+              </div>
+              <!--fim opc-ter-->
+
+              <!--ini opc-qua-->
+              <div class="flex flex-row gap-2">
+                <img 
+                  src="./assets/opc/opcimg03.jpeg"
+                  alt="Quiche de alho poró"
+                  class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+                />
+
+                <div>
+
+              
+                  <p class="font-bold text-lg">Quiche de alho poró</p>
+                  <p class="text-sm">Feito com carinho para você,<br>
+                    deixando o seu almoço com muito mais sabor. Aproveite!<br>
+                    A equipe do refeitório agradece!
+                  </p>
+                
+
+                  <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold ">Quarta-feira</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                    data-name="Quiche de alho poró"
+                    data-opc="Pedir Opção"
+                    >
+                      <i class="fa fa-add text-lg text-white"></i>
+                    </button>
+                  </div>
+
+                </div>
+
+              </div>
+              <!--fim opc-qua-->
+
+              <!--ini opc-qui-->
+              <div class="flex flex-row gap-2">
+                      <img 
+                        src="./assets/opc/opcimg04.jpeg"
+                        alt="Bife à rolê"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+                      />
+                
+                      <div>
+                        <p class="font-bold text-lg">Bife à rolê</p>
+                        <p class="text-sm">Feito com carinho para você,<br>
+                          deixando o seu almoço com muito mais sabor. Aproveite!<br>
+                          A equipe do refeitório agradece!
+                        </p>
+                      
+      
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                          <p class="font-bold ">Quinta-feira</p>
+                          <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                          data-name="Bife à rolê"
+                          data-opc="Pedir Opção"
+                          >
+                            <i class="fa fa-add text-lg text-white"></i>
+                          </button>
+                        </div>
+                
+                      </div>
+                
+              </div>
+              <!--fim opc-qui-->
+
+              <!--ini opc-sex-->
+              <div class="flex flex-row gap-2">
+                <img 
+                  src="./assets/opc/opcimg05.jpeg"
+                  alt="Bife com batata frita"
+                  class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+                />
+
+                <div>
+                  <p class="font-bold text-lg">Bife com batata frita</p>
+                  <p class="text-sm">Feito com carinho para você,<br>
+                    deixando o seu almoço com muito mais sabor. Aproveite!<br>
+                    A equipe do refeitório agradece!
+                  </p>
+                
+
+                  <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold ">Sexta-feira</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                    data-name="Bife com batata frita"
+                    data-opc="Pedir Opção"
+                    >
+                      <i class="fa fa-add text-lg text-white"></i>
+                    </button>
+                  </div>
+
+                </div>
+
+              </div>
+              <!--fim opc-sex-->
+
+              <!--ini opc-sab-->
+              <div class="flex flex-row gap-2">
+                      <img 
+                        src="./assets/opc/opcimg06.jpeg"
+                        alt="Ovo cozido"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+                      />
+                
+                      <div>
+                        <p class="font-bold text-lg">Ovo cozido</p>
+                        <p class="text-sm">Feito com carinho para você,<br>
+                          deixando o seu almoço com muito mais sabor. Aproveite!<br>
+                          A equipe do refeitório agradece!
+                        </p>
+                      
+      
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                          <p class="font-bold ">Sábado</p>
+                          <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                          data-name="Ovo cozido"
+                          data-opc="Pedir Opção"
+                          >
+                            <i class="fa fa-add text-lg text-white"></i>
+                          </button>
+                        </div>
+                
+                      </div>
+                
+              </div>
+              <!--fim opc-sab-->
+
+            </main>
+
+  <div class="mx-auto max-w-7xl px-2 my-2">
+    <h2 class="font-bold text-2xl">
+      Informações Nutricionais
+    </h2>
+  </div>
+  <!--orientações nutricionais-->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 py-6 mb-16 id="menu>
+    <!--ini inf-nutri1-->
+    <div class="flex gap-2 w-full">
+      <img 
+        src="./assets/Red_Apple.jpg"
+        alt="maça"
+        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+      />
+
+      <div class="w-full">
+        <p class="font-bold text-lg">Maçã</p>
+        <p class="text-sm"> A Maçã Fuji é rica em fibras, 
+          vitaminas e antioxidantes, 
+          o que pode ajudar a prevenir doenças cardíacas, 
+          reduzir o risco de alguns tipos de
+          câncer e melhorar a digestão.</p>
+
+        <div class="flex items-center gap-2 justify-between mt-3">
+          <p class="font-bold ">Mais informações</p>
+          <button class="bg-gray-900 px-5 rounded add-to-cart1-btn"
+          data-name="Maça"
+          
+          >
+            <i class="fa fa-info text-lg text-white"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--fim inf-nutri1-->
+
+    <!--ini inf-nutri2-->
+        <div class="flex gap-2 w-full">
+          <img 
+            src="./assets/salada-de-almeirao.webp"
+            alt="maça"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+          />
+    
+          <div class="w-full">
+            <p class="font-bold text-lg">Salada de almeirão</p>
+            <p class="text-sm"> Regue a salada com o molho e misture tudo muito bem. 
+              Agora é só servir essa saladinha de almeirão muito saborosa e perfeita para 
+              acompanhar um arroz branco e carnes assadas. Bom apetite!
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold ">Mais informações</p>
+              <button class="bg-gray-900 px-5 rounded add-to-cart2-btn"
+              data-name="Tutu à mineira"
+              
+              >
+                <i class="fa fa-info text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--fim inf-nutri2-->
+
+  <!--fim orientações nutricionais-->
+</div>
+</div>
+<!--fim menu-->
+<!--modal cart-->
+<div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+id="cart-modal"
+>
+  <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+    <h2 class="text-center font-bold text-2xl mb-2">Opção</h2>
+
+    <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+    <p class="font-bold">Tota de Opção: <span id="cart-total">00</span></p>
+    <p class="font-bold mt-4">Nome</p>
+    <input 
+    type="text"
+    placeholder="Digite seu nome."
+    id="nome"
+    class="w-full border-2 p-1 rounded my-1"
+    />
+    <p class="text-red-500 hidden" id="name-warn">Campo nome obrigatório!</p>
+
+    <p class="font-bold mt-4">Matrícula</p>
+    <input 
+    type="text"
+    placeholder="Digite sua matrícula."
+    id="matr"
+    class="w-full border-2 p-1 rounded my-1"
+    />
+    <p class="text-red-500 hidden" id="matr-warn">Campo matrícula obrigatório!</p>
+
+    <div class="flex items-center justify-between mt-5 w-full">
+      <button id="clouse-modal-btn" class="bg-red-500 text-white px-4 py-1 rounded">X</button>
+      <button id="checkout-modal-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar</button>
+    </div>
+
+  </div>
+
+</div>
+<!--fim modal cart-->
+
+<!--button cart footer-->
+<footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
+  <button class="flex items-center gap-2 text-white font-bold"
+  id="cart-btn"
+  >
+    (<span id="cart-count">0</span>)
+    Ver Opção
+    <i class="fa fa-eye text-lg text-white"></i>
+  </button>
+</footer>
+<!--fim button cart footer-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
